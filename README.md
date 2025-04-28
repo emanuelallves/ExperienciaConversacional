@@ -12,3 +12,8 @@
 
 ### Rodapé com informações adicionais:
 - Links úteis.
+
+## Tecnologias utilizadas
+- HTML5
+- CSS3
+- JavaScript
