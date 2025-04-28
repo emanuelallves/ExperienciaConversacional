@@ -1,0 +1,243 @@
+/*==========================
+  Variáveis de Cores
+==========================*/
+:root {
+    --primary-color: #ffd700;
+    --background-color: #1f1f1f;
+    --secondary-background: #2e2e2e;
+    --scrollbar-track: #333;
+    --text-color: white;
+    --border-color: #ccc;
+}
+
+/*==========================
+  Estilo Geral
+==========================*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*==========================
+  Seções Principais
+==========================*/
+.chat-section,
+.next-games-section,
+.news-section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.chat-section h2,
+.next-games-section h2,
+.news-section h2 {
+    margin-top: 40px;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    position: relative;
+}
+
+/*==========================
+  Chat Box
+==========================*/
+.chat-box {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: var(--secondary-background);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Barra de rolagem do chat */
+.chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track);
+}
+
+/*==========================
+  Caixa de Entrada do Chat
+==========================*/
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.input-box input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: #3e3e3e;
+    color: var(--text-color);
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.input-box button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-box button:hover {
+    background-color: #ffcc00;
+}
+
+.input-box button:active {
+    background-color: #ff9900;
+}
+
+/*==========================
+  Próximos Jogos
+==========================*/
+.next-games-section ul {
+    list-style: none;
+    background-color: var(--scrollbar-track);
+    padding: 16px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.next-games-section li {
+    margin: 8px 0;
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/*==========================
+  Notícias
+==========================*/
+.news-section ul {
+    list-style: none;
+    background-color: var(--scrollbar-track);
+    padding: 16px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.news-section li {
+    margin: 8px 0;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.news-section a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.news-section a:hover {
+    text-decoration: underline;
+}
+
+/*==========================
+  Responsividade
+==========================*/
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .input-box input {
+        width: 70%;
+    }
+
+    .input-box button {
+        width: 25%;
+    }
+}
+
+
+
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    border: 1px solid var(--primary-color);
+}
+
+.message-content {
+    background-color: #3e3e3e;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 70%;
+}
+
+.message-content strong {
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.message-content p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: white;
+}
+
+footer {
+    background-color: var(--scrollbar-track);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
