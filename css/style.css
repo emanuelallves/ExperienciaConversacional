@@ -1,6 +1,4 @@
-/*==========================
-  Variáveis de Cores
-==========================*/
+/*Variáveis de cores*/
 :root {
     --primary-color: #ffd700;
     --background-color: #1f1f1f;
@@ -10,9 +8,7 @@
     --border-color: #ccc;
 }
 
-/*==========================
-  Estilo Geral
-==========================*/
+/*Estilo geral*/
 body {
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
@@ -30,9 +26,7 @@ body {
     margin: 0 auto;
 }
 
-/*==========================
-  Seções Principais
-==========================*/
+/*Seções principais*/
 .chat-section,
 .next-games-section,
 .news-section {
@@ -51,9 +45,7 @@ body {
     position: relative;
 }
 
-/*==========================
-  Chat Box
-==========================*/
+/*Chat box*/
 .chat-box {
     border: 1px solid var(--border-color);
     padding: 10px;
@@ -80,9 +72,7 @@ body {
     background-color: var(--scrollbar-track);
 }
 
-/*==========================
-  Caixa de Entrada do Chat
-==========================*/
+/*Caixa de entrada do chat*/
 .input-box {
     display: flex;
     justify-content: space-between;
@@ -122,9 +112,7 @@ body {
     background-color: #ff9900;
 }
 
-/*==========================
-  Próximos Jogos
-==========================*/
+/*Próximos jogos*/
 .next-games-section ul {
     list-style: none;
     background-color: var(--scrollbar-track);
@@ -142,9 +130,7 @@ body {
     font-weight: bold;
 }
 
-/*==========================
-  Notícias
-==========================*/
+/*Notícias*/
 .news-section ul {
     list-style: none;
     background-color: var(--scrollbar-track);
@@ -170,9 +156,7 @@ body {
     text-decoration: underline;
 }
 
-/*==========================
-  Responsividade
-==========================*/
+/*Responsividade*/
 @media (max-width: 768px) {
     .container {
         padding: 10px;
@@ -187,9 +171,7 @@ body {
     }
 }
 
-
-
-
+/*Mensagens*/
 .message {
     display: flex;
     align-items: flex-start;
@@ -224,6 +206,7 @@ body {
     color: white;
 }
 
+/*Rodapé*/
 footer {
     background-color: var(--scrollbar-track);
     color: var(--text-color);

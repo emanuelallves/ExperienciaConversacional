@@ -65,7 +65,7 @@ const fakeMessages = [
 function sendFakeMessage() {
     const chatBox = document.querySelector('.chat-box');
     const botMessage = document.createElement('div');
-    botMessage.classList.add('message'); // nova classe para estilizar depois
+    botMessage.classList.add('message');
 
     const randomUserIndex = Math.floor(Math.random() * fakeUsers.length);
     const randomMessageIndex = Math.floor(Math.random() * fakeMessages.length);
